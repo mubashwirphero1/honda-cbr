@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda | Bootstrap Assignment | Programming Hero</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,8 +17,394 @@
     <link rel="shortcut icon" href="images/favicon (3).ico" type="image/x-icon">
 </head>
 
-<body>
-
+<body class="honda-font">
+    <!-- Header Area -->
+    <header class="honda-bg-info">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="py-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="honda-login ms-auto">Login</a>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+            <div class="container py-5 mb-5">
+                <div class="row text-white d-flex align-items-lg-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <p class="honda-fs-16 honda-fw-3">Computer-controlled digital transistorized with electronic
+                            advance</p>
+                        <h1 class="honda-fs-48 honda-fw-6">Honda CBR 300R</h1>
+                        <p class="honda-fs-16 honda-fw-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                            amet sint.
+                            Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header honda-bg-danger">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel">Honda CBR 300R</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-4 position-relative">
+                                                <label for="validationTooltip01" class="form-label text-dark">First
+                                                    name</label>
+                                                <input type="text" class="form-control" id="validationTooltip01"
+                                                    value="" required>
+                                                <div class="valid-tooltip">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 position-relative">
+                                                <label for="validationTooltip02" class="form-label text-dark">Last
+                                                    name</label>
+                                                <input type="text" class="form-control" id="validationTooltip02"
+                                                    value="Otto" required>
+                                                <div class="valid-tooltip">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 position-relative">
+                                                <label for="validationTooltipUsername"
+                                                    class="form-label text-dark">Username</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text"
+                                                        id="validationTooltipUsernamePrepend">@</span>
+                                                    <input type="text" class="form-control"
+                                                        id="validationTooltipUsername"
+                                                        aria-describedby="validationTooltipUsernamePrepend" required>
+                                                    <div class="invalid-tooltip">
+                                                        Please choose a unique and valid username.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 position-relative">
+                                                <label for="validationTooltip03"
+                                                    class="form-label text-dark">City</label>
+                                                <input type="text" class="form-control" id="validationTooltip03"
+                                                    required>
+                                                <div class="invalid-tooltip">
+                                                    Please provide a valid city.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 position-relative">
+                                                <label for="validationTooltip04" class="form-label text-dark">Word
+                                                    No.</label>
+                                                <select class="form-select" id="validationTooltip04" required>
+                                                    <option selected disabled value="">Choose...</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                </select>
+                                                <div class="invalid-tooltip">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 position-relative">
+                                                <label for="validationTooltip05"
+                                                    class="form-label text-dark">Address</label>
+                                                <input type="text" class="form-control" id="validationTooltip05"
+                                                    required>
+                                                <div class="invalid-tooltip">
+                                                    Please provide a valid zip.
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="honda-purchase" data-bs-target="#exampleModalToggle2"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Purchase</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header honda-bg-danger">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-dark">Thank you for purchasing <strong>Honda CBR 300R</strong>
+                                            :):):)
+                                            You will get your <strong>Honda CBR 300R</strong> within 3-5 days.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <p>...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="honda-purchase" data-bs-toggle="modal" href="#exampleModalToggle"
+                            role="button">Purchase</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img class="img-fluid" src="images/header-bike.png" alt="Bike Image">
+                    </div>
+                </div>
+        </section>
+    </header>
+    <!-- Main Area -->
+    <main>
+        <!-- Featured Bike Section -->
+        <section class="honda-mt-3">
+            <h2 class="text-center honda-fs-48 honda-fw-6">Fetured Bikes 2021</h2>
+            <p class="text-center honda-fs-16 honda-fw-4 honda-danger mb-5">Best bike collection</p>
+            <div class="container px-4">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="img-fluid" src="images/feature-bike.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="img-fluid" src="images/feature-bike.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="img-fluid" src="images/feature-bike.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest News Section -->
+        <section class="honda-mt-5 container">
+            <h2 class="text-center honda-fs-48 honda-fw-6 honda-text-dark2">latest News</h2>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 mt-2">
+                <!-- Single Latest News -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="images/bike-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title honda-text-dark3 honda-fs-28 honda-fw-6">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text">XDiavel, the Ducati cruiser that combines the best of both worlds, is
+                                renewed, still remaining true to its philosophy.</p>
+                            <a href="#" class="honda-readMore-btn honda-fs-28 honda-fw-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Latest News -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="images/bike-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title honda-text-dark3 honda-fs-28 honda-fw-6">Motorcycles & Scooters</h5>
+                            <p class="card-text">A motorcycle, often called a motorbike, bike, or cycle, is a two- or
+                                three-wheeled motor vehicle.
+                                rallies.</p>
+                            <a href="#" class="honda-readMore-btn honda-fs-28 honda-fw-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Latest News -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="images/bike-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title honda-text-dark3 honda-fs-28 honda-fw-6">2021 Honda CBR500R</h5>
+                            <p class="card-text">Is it any wonder why the Honda CBR500R is one of our most popular
+                                sportbikes? It just gets so many things right. Price.</p>
+                            <a href="#" class="honda-readMore-btn honda-fs-28 honda-fw-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients Review Section -->
+        <section class="container honda-mt-5">
+            <h2 class="honda-fs-48 honda-fw-6 text-center">Happy <span class="honda-danger">Clients says</span></h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 honda-mt-3">
+                <!-- Single Clients Review -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/user-1.png" class="card-img-top w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <p class="card-text honda-fs-16 text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p class="text-primary text-center mt-3">Regina Miles</p>
+                            <p class="honda-fs-14 honda-fw-6 honda-text-dark5 text-center">Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Clients Review -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/user-2.png" class="card-img-top w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <p class="card-text honda-fs-16 text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p class="text-primary text-center mt-3">Regina Miles</p>
+                            <p class="honda-fs-14 honda-fw-6 honda-text-dark5 text-center">Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Clients Review -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/user-3.png" class="card-img-top w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <p class="card-text honda-fs-16 text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p class="text-primary text-center mt-3">Regina Miles</p>
+                            <p class="honda-fs-14 honda-fw-6 honda-text-dark5 text-center">Banker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="honda-mt-5 container">
+            <h2 class="honda-fs-48 honda-fw-6 text-center">Frequently Asked <span class="honda-danger">Questions</span>
+            </h2>
+            <div class="px-4 honda-mt-3">
+                <div class=" row row-cols-1 row-cols-lg-2 gx-5 d-flex align-items-center">
+                    <div class="col">
+                        <img src="images/faq.png" class="w-75" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="accordion honda-mt-3" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        What are the most important things I should
+                                        know about riding a bike?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        Safety First! Always obey the rules of the road. Obey all traffic signals,
+                                        signs, and laws. Get in the mindset of “driving” your bike—not just “riding”
+                                        your bike. This will help you be a more focused and legally compliant bike
+                                        rider.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        How can I tell if my helmet is old and I need a
+                                        new one?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        Bear in mind that if the helmet did its job most people would tell you that they
+                                        did not even hit their head, or did not hit their head that hard. And the thin
+                                        shells on most helmets now tend to hide any dents in the foam. But if you can
+                                        see marks on the shell or measure any foam crush at all, replace the helmet.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        My bike has been in storage is it safe to ride?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        4 Answers. Its entirely possible the bike is good and safe to ride with a bit of
+                                        air in the tires and shocks/forks - this would heavily depend on the climate in
+                                        the garage it was stored in and condition it was in before being hung up.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        What rules should I follow when riding my bike?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                        Be visible at all times. - Wear bright and visible clothes. Reflective stripes
+                                        ads viability. Always stay out of blind zones. Alert other drivers before
+                                        entering their blind zone. Be predictable. - Others on the road must be able to
+                                        predict your next move. Give proper signals before changing a lane or taking
+                                        deviation. Everyone in the road is dumb and partially blind. Well, just imagine
+                                        so and be prepared for an unexpected turn or braking.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Section -->
+        <section class="container">
+            <a href="http://honda.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/it's-a-honda.png" class="d-block img-fluid honda-mt-5 mx-auto" alt="">
+            </a>
+        </section>
+    </main>
 
 
 
